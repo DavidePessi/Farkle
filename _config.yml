@@ -1,27 +1,22 @@
-name: wherewolf-rules
-title: null # name of the site
-author: Pietro Arsi # name of site's author
-# url: https://wherewolf-rules.dev # root address of the site
-baseurl: /wherewolf-rules
+title: Farkle # name of the site
+author: Davide Pessi # name of site's author
+description: Regole del Farkle
+url: https://davidepessi.github.io # root address of the site
+baseurl: /Farkle
 
 permalink: /:slug.html
 
-favicon: "logo2.png"
+theme: jekyll-theme-merlot
 
-# markdown: maruku
-
-remote_theme: riggraz/no-style-please
-
-theme_config:
-  appearance: "auto" # can be "light", "dark" or "auto"
-  back_home_text: null #".." # customize text for homepage link in post layout
-  date_format: "%d-%m-%Y" # customize how date is formatted
-  show_description: false # show blog description in home page
-
-sass:
-  style: :compressed
+exclude:
+  - download
 
 plugins:
   - jemoji
   - jekyll-feed
   - jekyll-seo-tag
+  # enabled by default on GitHub Pages, listed here so local previews match
+  - jekyll-optional-front-matter
+  - jekyll-readme-index
+  - jekyll-default-layout
+  - jekyll-relative-links
