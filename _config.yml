@@ -1,0 +1,27 @@
+name: wherewolf-rules
+title: null # name of the site
+author: Pietro Arsi # name of site's author
+# url: https://wherewolf-rules.dev # root address of the site
+baseurl: /wherewolf-rules
+
+permalink: /:slug.html
+
+favicon: "logo2.png"
+
+# markdown: maruku
+
+remote_theme: riggraz/no-style-please
+
+theme_config:
+  appearance: "auto" # can be "light", "dark" or "auto"
+  back_home_text: null #".." # customize text for homepage link in post layout
+  date_format: "%d-%m-%Y" # customize how date is formatted
+  show_description: false # show blog description in home page
+
+sass:
+  style: :compressed
+
+plugins:
+  - jemoji
+  - jekyll-feed
+  - jekyll-seo-tag
